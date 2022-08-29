@@ -1,0 +1,344 @@
+.cadre {
+	border: 3px dotted rgb(200, 19, 19);
+}
+
+.jcsb {
+	justify-content: space-between;
+}
+
+.jcsa {
+	justify-content: space-around;
+}
+
+.jcc {
+	justify-content: center;
+}
+
+.jcse {
+	justify-content: space-evenly;
+}
+
+.jcfe {
+	justify-content: flex-end;
+}
+
+.textal {
+	text-align: center;
+}
+
+.alitcent {
+	align-items: center;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.alcstart {
+	align-content: flex-start;
+}
+
+.alcend {
+	align-content: flex-end;
+}
+
+.aliend {
+	align-items: flex-end;
+}
+
+.alistart {
+	align-items: flex-start;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.aitcent {
+	align-items: center;
+}
+
+.absol {
+	position: absolute;
+}
+
+.maxw100 {
+	max-width: 100vw;
+}
+
+.vw100 {
+	width: 100vw;
+}
+
+.vw80 {
+	width: 80vw;
+}
+
+.vw70 {
+	width: 70vw;
+}
+
+.vw60 {
+	width: 60vw;
+}
+
+.vw50 {
+	width: 50vw;
+}
+
+.vw40 {
+	width: 40vw;
+}
+
+.vw30 {
+	width: 30vw;
+}
+
+.vw20 {
+	width: 20vw;
+}
+
+.vw10 {
+	width: 10vw;
+}
+
+.maxh100 {
+	max-height: 100vh;
+}
+
+.vh100 {
+	height: 100vh;
+}
+
+.vh80 {
+	height: 80vh;
+}
+
+.vh70 {
+	height: 70vh;
+}
+
+.vh60 {
+	height: 60vh;
+}
+
+.vh50 {
+	height: 50vh;
+}
+
+.vh40 {
+	height: 40vh;
+}
+
+.vh30 {
+	height: 30vh;
+}
+
+.vh20 {
+	height: 20vh;
+}
+
+.vh20 {
+	height: 25vh;
+}
+
+.w100p {
+	width: 100%;
+}
+
+.w80p {
+	width: 80%;
+}
+
+.w70p {
+	width: 70%;
+}
+
+.w60p {
+	width: 60%;
+}
+
+.w50p {
+	width: 50%;
+}
+
+.w40p {
+	width: 40%;
+}
+
+.w30p {
+	width: 30%;
+}
+
+.w20p {
+	width: 20%;
+}
+
+.w20p {
+	width: 25%;
+}
+
+.wh10 {
+	width: 10%;
+}
+
+.h100p {
+	height: 100%;
+}
+
+.h90p {
+	height: 90%;
+}
+
+.h80p {
+	height: 80%;
+}
+
+.h70p {
+	height: 70%;
+}
+
+.h60p {
+	height: 60%;
+}
+
+.h50p {
+	height: 50%;
+}
+
+.h40p {
+	height: 40%;
+}
+
+.h30p {
+	height: 30%;
+}
+
+.h20p {
+	height: 20%;
+}
+
+.h10p {
+	height: 10%;
+}
+
+.h5p {
+	height: 5%;
+}
+
+
+.large {
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+body {
+
+	margin: 0 auto;
+	height: 100vh;
+	cursor: url('/public/chatpetit.svg'), auto;
+}
+
+
+.bg {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Acciughe_2.jpg");
+	min-height: 100vh;
+	min-width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.6;
+
+}
+
+.fg {
+	min-height: 100vh;
+	min-width: 100vw;
+
+}
+
+
+
+
+
+
+@keyframes expouet {
+	from {
+		background-color: rgb(132, 0, 255);
+	}
+
+	to {
+		background-color: rgb(219, 150, 193);
+	}
+}
+
+
+
+.lien {
+	color: rgb(165, 59, 124);
+}
+
+.bisou {
+	color: rgb(165, 59, 124);
+	display: flex;
+	justify-content: center;
+	animation-name: expouet;
+	animation-duration: 10s;
+	background: rgb(173, 176, 226);
+	background: radial-gradient(circle, rgba(173, 176, 226, 1) 0%, rgba(232, 209, 230, 1) 100%);
+	width: 100vw;
+}
+
+.bisou2 {
+	color: rgb(165, 59, 124);
+	font-size: larger;
+	animation-name: expouet;
+	animation-duration: 10s;
+	background: rgb(173, 176, 226);
+	background: radial-gradient(circle, rgba(173, 176, 226, 1) 0%, rgba(232, 209, 230, 1) 100%);
+	width: 100vw;
+}
+
+
+.zoom {
+
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+.zoom:hover {
+
+	transform: scale(1.3);
+}
+
+.image1 {
+
+	height: 25vh;
+	cursor: url('/public/chatnoir100.svg'), auto;
+}
+
+.blink_me {
+	animation: blinker 1s linear infinite;
+}
+
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
