@@ -2,7 +2,9 @@ import "./App.css"
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Quizz1 from "./quizz1"
+import ChatGPT from "./ChatGPT"
 import PageImages from "./pagedimagedechats";
+import ChatGPTpetite from "./ChatGPTpetite"
 
 (function emojiCursor() {
   
@@ -148,7 +150,10 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Quizz1 />}/>
+      <Route path="/p3" element={<ChatGPT />}/>
       <Route path="/p2" element={<PageImages/>}/>
+      <Route path="/p4" element={<ChatGPTpetite/>}/>
+      
       
    
     </Routes>

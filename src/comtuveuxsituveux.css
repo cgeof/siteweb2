@@ -328,6 +328,12 @@ body {
 
 .image1 {
 
+	height: 50vh;
+	cursor: url('/public/chatnoir100.svg'), auto;
+}
+
+.image0 {
+
 	height: 25vh;
 	cursor: url('/public/chatnoir100.svg'), auto;
 }
@@ -337,8 +343,53 @@ body {
 }
 
 
+
+
+
 @keyframes blinker {
 	50% {
 		opacity: 0;
 	}
+}
+
+.test {  width: 100px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	animation-name: test;
+	animation-direction: alternate-reverse;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	font-size: 25px;
+}
+
+@keyframes test {
+	0%   {background-color:rgb(163, 166, 228); left:0px; top:0px;}
+	25%  {background-color:rgb(195, 172, 240); left:600px; top:0px;}
+	50%  {background-color:rgb(212, 170, 241); left:-600px; top:550px;}
+	75%  {background-color:rgb(222, 152, 238); left:600px; top:550px;}
+	100% {background-color:rgb(153, 158, 238); left:0px; top:0px;}
+}
+
+.test2 {  width: 100px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	animation-name: test2;
+	animation-direction: alternate-reverse;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	font-size: 20px;
+	
+	top: 0;
+}
+
+@keyframes test2 {
+	0%   {background-color:rgb(163, 166, 228); left:100px; top:50px; transform: rotate(360deg);}
+	25%  {background-color:rgb(195, 172, 240); left:100px; top:900px;  transform: rotate(60deg);}
+	50%  {background-color:rgb(212, 170, 241); left:1700px; top:900px; transform: rotate(360deg);}
+	75%  {background-color:rgb(222, 152, 238); left:1700px; top:50px; transform: rotate(60deg);}
+	100% {background-color:rgb(153, 158, 238); left:100px; top:50px;  transform: rotate(360deg);}
+
+	
 }

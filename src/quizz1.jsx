@@ -1,6 +1,7 @@
 
 import React from "react"
 import "./comtuveuxsituveux.css"
+import { Link } from "react-router-dom";
 
 const w = {
 
@@ -20,10 +21,10 @@ function bisou(e, f, g) {
 
 function changeImage(a, b, c, d) {
 
-  let image1 = document.getElementById(a)
+  let image0 = document.getElementById(a)
   let image2 = document.getElementById(b)
   console.log("unptitmessageaveclesguymet")
-  bisou(image1, c, b)
+  bisou(image0, c, b)
   bisou(image2, d, a)
 }
 
@@ -55,13 +56,15 @@ function Quizz1() {
 
       <div style={{ position: "absolute" }} className="bg"></div>
 
-      <div className="fg cadre absol vh100 vw100">
-        <div className="h80p cadre w100p flex col aitcent jcsb">
+      <div className="fg  absol vh100 vw100">
+        <div className="h80p  w100p flex col aitcent jcsb">
           <h1 className=" bisou "> Les petits chats </h1>
+          <b> <Link className="lien test blink_me" style={{width: "10vh", height: "2vh" }} to="/p2"
+		      > Lien vers les indices</Link> </b>
           <h2 className=" blink_me"> Qui est le cuicui ? </h2>
 
           <div style={{ height: "3%" }}> </div>
-                    <img className="image1 zoom " src="DSC00122.JPG" />
+                    <img className="image0 zoom " src="DSC00122.JPG" />
           <div style={{ height: "7%" }}> </div>
 
           <p className="large"> Cliquez sur la bonne réponse pour remporter la cagnotte </p>
